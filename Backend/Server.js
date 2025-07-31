@@ -26,8 +26,6 @@ const corsOptions = {
 app.use(express.json());
 app.use(cors(corsOptions));
 app.use(cookieParser());
-
-app.use(express.urlencoded({ extended: true }));
 //API Routes
 app.use("/api", chatroutes);
 app.use("/", authRoute);
