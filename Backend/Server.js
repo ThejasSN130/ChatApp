@@ -6,7 +6,7 @@ import chatroutes from "./Routes/chat.js";
 import cookieParser from "cookie-parser";
 import authRoute from "./Routes/AuthRoute.js";
 const allowedOrigins = [
-"http://localhost:5173"
+"https://chatai-8egp.onrender.com"
 ];
 
 const app = express();
