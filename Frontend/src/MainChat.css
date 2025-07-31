@@ -1,0 +1,6 @@
+.main-chat {
+  display: flex;
+  height: 100vh;
+  background-color: #212121;
+  overflow: hidden;
+}

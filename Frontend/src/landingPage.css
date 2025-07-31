@@ -1,0 +1,164 @@
+/* LandingPage.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #212121;
+  color: white;
+}
+
+.landing-page {
+  scroll-behavior: smooth;
+}
+
+.header {
+  background-color: #171717;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px #000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav a {
+  color: white;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #7e8282;
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background-color: #212121;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: #cccccc;
+}
+
+.hero button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  color: #171717;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero button:hover {
+  background-color: #20a361;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #171717;
+  padding: 4rem 2rem;
+}
+
+.feature {
+  background-color: #212121;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.feature h3 {
+  color: #f4f4f4;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #171717;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.nav {
+  background-color: #171717;
+  padding: 1rem 2rem;
+}
+a {
+  color: white;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: large;
+}
+
+.btn {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  background-color: #6f7372;
+  color: #171717;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.about {
+  background-color: #171717;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto 1rem auto;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.feature-text {
+  opacity: 0.8;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #cccccc;
+}
+
+.about-text {
+  opacity: 0.8;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #cccccc;
+}
+
+img {
+  height: 2.3rem;
+}
+
+.name {
+  position: relative;
+  right: 24.8rem;
+}
