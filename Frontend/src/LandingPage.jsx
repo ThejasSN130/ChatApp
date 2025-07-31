@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./LandingPage.css"; // for custom styles
+import "./landingPage.css"; // for custom styles
 import { Link } from "react-router-dom";
 
 const LandingPage = () => {
