@@ -29,7 +29,7 @@ function ChatWindow() {
     const verifyCookie = async () => {
       try {
         const { data } = await axios.post(
-          "http://localhost:8080/userAuth",
+          "https://chat-server-j101.onrender.com/userAuth",
           {},
           { withCredentials: true }
         );
@@ -63,7 +63,10 @@ function ChatWindow() {
       }),
     };
     try {
-      const response = await fetch("http://localhost:8080/api/chat", options);
+      const response = await fetch(
+        "https://chat-server-j101.onrender.com/api/chat",
+        options
+      );
       let data = await response.json();
       console.log("Reply from Backend:", data.reply);
       setReply(data.reply);

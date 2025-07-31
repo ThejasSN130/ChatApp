@@ -57,7 +57,7 @@ const Login = () => {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:8080/login",
+        "https://chat-server-j101.onrender.com/login",
         { ...inputValue },
         { withCredentials: true }
       );
@@ -67,7 +67,7 @@ const Login = () => {
         handleSuccess(message);
         setTimeout(() => {
           navigate("/chats");
-        }, 500);
+        }, 100);
       } else {
         handleError(message);
       }

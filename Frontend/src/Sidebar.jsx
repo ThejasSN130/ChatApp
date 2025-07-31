@@ -17,7 +17,9 @@ function Sidebar() {
 
   const getALLthreads = async () => {
     try {
-      const response = await fetch("http://localhost:8080/api/thread");
+      const response = await fetch(
+        "https://chat-server-j101.onrender.com/api/thread"
+      );
       const res = await response.json();
       const filteredData = res.map((thread) => ({
         threadId: thread.threadId,
@@ -46,7 +48,7 @@ function Sidebar() {
     setCurrThread(newThreadId);
     try {
       const response = await fetch(
-        `http://localhost:8080/api/thread/${newThreadId}`
+        `https://chat-server-j101.onrender.com/api/thread/${newThreadId}`
       );
       const res = await response.json();
       // console.log("Thread changed to:", res);
@@ -61,7 +63,7 @@ function Sidebar() {
   const DeleteThread = async (threadId) => {
     try {
       const response = await fetch(
-        `http://localhost:8080/api/thread/${threadId}`,
+        `https://chat-server-j101.onrender.com/api/thread/${threadId}`,
         {
           method: "DELETE",
         }

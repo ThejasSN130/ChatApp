@@ -63,7 +63,7 @@ const Signup = () => {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:8080/signup",
+        "https://chat-server-j101.onrender.com/signup",
         { ...inputValue },
         { withCredentials: true }
       );
