@@ -5,23 +5,29 @@ import mongoose from "mongoose";
 import chatroutes from "./Routes/chat.js";
 import cookieParser from "cookie-parser";
 import authRoute from "./Routes/AuthRoute.js";
+const allowedOrigins = [
+"http://localhost:5173"
+];
 
 const app = express();
 const port = 8080;
 
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true,
+};
 //middleweare
 app.use(express.json());
-app.use(
-  cors({
-    origin: ["http://localhost:5173"],
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true,
-  })
-);
-app.options("*", cors());
+app.use(cors(corsOptions));
 app.use(cookieParser());
 app.use(express.json());
-
+app.use(express.urlencoded({ extended: true }));
 //API Routes
 app.use("/api", chatroutes);
 app.use("/", authRoute);
