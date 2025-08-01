@@ -12,6 +12,7 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <nav className="navbar navbar-expand-lg nav">
+        <div>
         <img
           src="https://cdn.prod.website-files.com/5b15d605b7c459fc409872b5/6584c9d60c1bfe93ba753276_Close%20CRM%20Logo%204.png"
           alt=""
