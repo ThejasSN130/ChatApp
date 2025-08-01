@@ -4,3 +4,27 @@
   background-color: #212121;
   overflow: hidden;
 }
+
+.sidebar-container {
+  width: 250px; 
+}
+
+.chat-window {
+  flex: 1;
+  overflow-y: auto;
+}
+
+
+@media (max-width: 700px) {
+  .sidebar-container {
+    display: none;
+  }
+
+  .chat-window {
+    width: 100%;
+  }
+
+  .main-chat {
+    flex-direction: column;
+  }
+}
