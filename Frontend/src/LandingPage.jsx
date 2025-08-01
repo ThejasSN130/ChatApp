@@ -21,10 +21,12 @@ const LandingPage = () => {
           ChatAI
         </a>
            </Link>
+           <Link to="/signup">
         <div className="">
           <a className="navbar-brand" href="/signup">
             Signup
           </a>
+           </Link>
           <a
             className="navbar-brand"
             href="https://www.linkedin.com/in/thejas-sn-921706284/"
