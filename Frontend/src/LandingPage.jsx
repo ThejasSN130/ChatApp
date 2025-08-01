@@ -22,7 +22,7 @@ const LandingPage = () => {
         </a>
            </Link>
            <Link to="/signup">
-        <div className="">
+      
           <a className="navbar-brand" href="/signup">
             Signup
           </a>
