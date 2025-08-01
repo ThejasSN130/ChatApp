@@ -1,12 +1,14 @@
 import React from "react";
 import Sidebar from "./Sidebar";
 import ChatWindow from "./ChatWindow";
-import "./MainChat.css"; // Optional: layout styles
+import "./MainChat.css";
 
 function MainChat() {
   return (
     <div className="main-chat">
-      <Sidebar />
+      <div className="sidebar-container">
+        <Sidebar />
+      </div>
       <ChatWindow />
     </div>
   );
