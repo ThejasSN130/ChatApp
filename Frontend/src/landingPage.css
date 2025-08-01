@@ -162,3 +162,10 @@ img {
   position: relative;
   right: 24.8rem;
 }
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
