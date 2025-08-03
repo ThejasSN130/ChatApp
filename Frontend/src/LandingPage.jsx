@@ -48,7 +48,7 @@ const LandingPage = () => {
             intelligent assistant for everything you need to know, do, or
             discover.
           </p>
-          <Link to="/login">
+          <Link to="/chats">
             <button className="btn">Get Started</button>
           </Link>
         </section>
